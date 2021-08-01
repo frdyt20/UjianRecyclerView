@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".view.SubmitDataScreen">
+
+        <EditText
+            android:id="@+id/et_product"
+            style="@style/TextViewTemplate"
+            android:hint="@string/txt_hint_product"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/et_price"
+            style="@style/TextViewTemplate"
+            android:hint="@string/txt_hint_price"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_desc"
+            style="@style/TextViewTemplate"
+            android:hint="@string/txt_hint_desc"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/et_variant"
+            style="@style/TextViewTemplate"
+            android:hint="@string/txt_hint_variant"
+            android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_submit_simpan"
+            style="@style/ButtonSubmitFragment"
+            android:layout_marginEnd="8dp"
+            android:text="@string/txt_simpan"/>
+
+        <Button
+            android:id="@+id/btn_submit_batal"
+            style="@style/ButtonSubmitFragment"
+            android:text="@string/txt_batal"/>
+
+    </LinearLayout>
+
+</LinearLayout>
